@@ -1,0 +1,116 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-size: medium;
+  font-weight: normal;
+  font-family: Palatino, URW Palladio L, serif;
+}
+
+/* Header styles */
+#headerContainer > h1{
+  font-size: large;
+  font-weight: bold;
+  color: deeppink;
+}
+
+#headerContainer > small{
+  font-size:small;
+  font-weight: lighter;
+  color: hotpink;
+}
+
+#headerContainer{
+  margin: 30px;
+  padding:20px;
+  box-shadow: 5px 3px rgba(0, 0, 0, 0.03);
+  border-radius: 25px;
+  background-color: whitesmoke;
+  text-align:center;
+}
+
+#formContainer{
+  margin: 30px;
+  padding:20px;
+  box-shadow: 5px 3px rgba(0, 0, 0, 0.03);
+  border-radius: 30px;
+  background-color: lightpink;
+  text-align:center;
+}
+
+#formContainer > #studentForm >.input.field{
+  display: flex;
+  flex-direction: column;
+}
+
+#formContainer > #studentForm > .input.field > label {
+  display:flex;
+  flex-direction:column;
+  margin-bottom:5px;
+}
+
+#formContainer > #studentForm > .input.field > label {
+  font-weight:700;
+  margin-bottom:5px;
+}
+
+#formContainer button{
+ color:black;
+ background-color:hotpink;
+ border-radius:5px;
+}
+
+#listcontainer > .list-item{
+  margin: 30px;
+  padding:20px;
+  box-shadow: 5px 3px rgba(0, 0, 0, 0.03);
+  border-radius: 10px;
+  background-color: whitesmoke;
+  text-align:left;
+}
+
+#listcontainer > .list-item > h2{
+  margin:6px;
+  font-size:15px;
+  font-weight:600;
+}
+
+#listcontainer > .list-item > p{
+  margin:12px;
+  font-size:13px;
+  line-height:1.5;
+}
+
+#listcontainer > .list-item > button {
+color:black;
+ background-color:hotpink;
+ border-radius:5px;
+ font-size: 14px;
+ cursor: pointer;
+ width:50%;
+ margin:0 auto;
+ display: block;
+ 
+}
+
+#listContainer{
+  display:flex;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+@media (width < 320px){
+  #listContainer > .list-item{
+    grid-column: span 12;
+  }
+}
+
+@media (width < 1000px){
+  #listContainer > .list-item {
+    grid-column: span 2;
+  }
+}
+
+@media (width < 320px)and (width < 1000px){
+  #listContainer > .list-item {
+    grid-column: span 4;
+  }
+}
